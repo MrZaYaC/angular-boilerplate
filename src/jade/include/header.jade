@@ -1,0 +1,35 @@
+nav.navbar.navbar-default
+  div.container-fluid
+    div.navbar-header
+      button.navbar-toggle(ng-click='vm.isCollapsed=!vm.isCollapsed')
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.navbar-brand(ui-sref="orders")
+        img(alt="{{ 'MAIN.BRAND' | translate }}" src="/img/logo.png" width="20" height="20")
+      a.navbar-brand(ui-sref="home" translate="MAIN.BRAND")
+    nav.navbar-collapse.bs-navbar-collapse(collapse="vm.isCollapsed")
+      ul.nav.navbar-nav
+
+      ul.nav.navbar-nav.navbar-right(ng-hide="vm.user.isLogged")
+        li(ui-sref-active="active")
+          a(ui-sref="signUp")
+            span.glyphicon.glyphicon-off(aria-hidden="true")
+            |&nbsp;
+            span(translate="MAIN.SIGN_UP")
+        li(ui-sref-active="active")
+          a(ui-sref="signIn")
+            span.glyphicon.glyphicon-log-in(aria-hidden="true")
+            |&nbsp;
+            span(translate="MAIN.SIGN_IN")
+      ul.nav.navbar-nav.navbar-right(ng-show="vm.user.isLogged")
+        li(ui-sref-active="active")
+          a(ui-sref="profile")
+            span.glyphicon.glyphicon-user(aria-hidden="true")
+            |&nbsp;
+            span(translate="MAIN.PROFILE")
+        li(ng-click="vm.logout()")
+          a(href="#")
+            span.glyphicon.glyphicon-log-out(aria-hidden="true")
+            |&nbsp;
+            span(translate="MAIN.LOGOUT")

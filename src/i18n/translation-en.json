@@ -1,0 +1,33 @@
+{
+  "MAIN": {
+    "BRAND": "My project",
+    "SIGN_IN": "Sign in",
+    "SIGN_UP": "Sign up",
+    "EMAIL": "Email",
+    "LOGIN": "Phone or email",
+    "PASSWORD": "Password",
+    "CONFIRM_PASSWORD": "Confirm password",
+    "REMEMBER_ME": "Remember me",
+    "PROFILE": "Profile",
+    "LOGOUT": "Log out"
+  },
+  "HEADER": {
+
+  },
+  "SIGN_PAGE": {
+    "IF_YOU_DONT_HAVE_ACCOUNT": "If you haven`t account, please click:",
+    "REGISTRATION": "Sign up",
+    "REGISTER": "Sign up",
+    "IF_YOU_HAVE_ACCOUNT": "If you already have account, please click:",
+    "ERROR": {
+      "LOGIN": "Wrong phone or email",
+      "LOGIN_EXIST": "User already exist",
+      "CONFIRM_PASSWORD": "Passwords are mismatch"
+    }
+  },
+  "FORM": {
+    "ERROR": {
+      "REQUIRED": "This field is required"
+    }
+  }
+}
