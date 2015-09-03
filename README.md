@@ -11,3 +11,13 @@ bower install
 
 npm start
 ```
+
+## Build
+
+```
+npm install
+
+bower install
+
+npm run build
+```
